@@ -1,7 +1,11 @@
 #讓使用者重複輸入數字去猜
 import random #輸入別 人寫好的功能
+start = input('請決定隨機數字範圍開始值:')
+end = input('請決定隨機數字結束值:')
+start = int(start)
+end = int(end)
 
-r = random. randint(1, 100) #random + integer (隨機整數)
+r = random. randint(start, end) #random + integer (隨機整數)
 count = 0
 while True:
 	count += 1 #count = count + 1 
